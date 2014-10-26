@@ -1,0 +1,8 @@
+#Default Tile Set
+
+<tile>Dirt
+<image> images/tiles/dirt.png
+<shape> 0
+<passable> 0
+<tileid> 1
+<end>
