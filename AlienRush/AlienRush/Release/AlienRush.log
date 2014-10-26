@@ -1,13 +1,213 @@
-﻿Build started 10/25/2014 10:39:28 PM.
+﻿Build started 10/25/2014 11:31:17 PM.
      1>Project "F:\Programming\IT276\AlienRush\AlienRush\AlienRush\AlienRush.vcxproj" on node 2 (build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>InitializeBuildStatus:
-         Touching "Release\AlienRush.unsuccessfulbuild".
+         Creating "Release\AlienRush.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /Wall /WX- /Od /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHs /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\enemy.c ..\..\src\projectiles.c
+         enemy.c
+     1>f:\programming\libs\include\SDL_keyboard.h(61): warning C4820: 'SDL_keysym' : '3' bytes padding added after data member 'scancode'
+     1>f:\programming\libs\include\SDL_keyboard.h(64): warning C4820: 'SDL_keysym' : '2' bytes padding added after data member 'unicode'
+     1>f:\programming\libs\include\SDL_video.h(82): warning C4820: 'SDL_PixelFormat' : '2' bytes padding added after data member 'Ashift'
+     1>f:\programming\libs\include\SDL_video.h(91): warning C4820: 'SDL_PixelFormat' : '3' bytes padding added after data member 'alpha'
+     1>f:\programming\libs\include\SDL_video.h(101): warning C4820: 'SDL_Surface' : '2' bytes padding added after data member 'pitch'
+     1>f:\programming\libs\include\SDL_events.h(130): warning C4820: 'SDL_KeyboardEvent' : '1' bytes padding added after data member 'state'
+     1>f:\programming\libs\include\SDL_events.h(138): warning C4820: 'SDL_MouseMotionEvent' : '1' bytes padding added after data member 'state'
+     1>f:\programming\libs\include\SDL_events.h(157): warning C4820: 'SDL_JoyAxisEvent' : '1' bytes padding added after data member 'axis'
+     1>f:\programming\libs\include\SDL_events.h(165): warning C4820: 'SDL_JoyBallEvent' : '1' bytes padding added after data member 'ball'
+     1>f:\programming\libs\include\SDL_events.h(196): warning C4820: 'SDL_ResizeEvent' : '3' bytes padding added after data member 'type'
+     1>f:\programming\libs\include\SDL_events.h(213): warning C4820: 'SDL_UserEvent' : '3' bytes padding added after data member 'type'
+     1>f:\programming\libs\include\SDL_events.h(223): warning C4820: 'SDL_SysWMEvent' : '3' bytes padding added after data member 'type'
+     1>f:\programming\it276\alienrush\src\graphics.h(37): warning C4255: 'ResetBuffer' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(38): warning C4255: 'NextFrame' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(42): warning C4255: 'LoadFonts' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(46): warning C4255: 'DrawMessages' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(47): warning C4255: 'InitMessages' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\sprite.h(25): warning C4255: 'InitSpriteList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\sprite.h(34): warning C4255: 'CloseSprites' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\particle.h(28): warning C4255: 'ResetAllParticles' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\particle.h(29): warning C4255: 'SpawnParticle' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\particle.h(30): warning C4255: 'DrawAllParticles' : no function prototype given: converting '()' to '(void)'
+     1>F:\Programming\libs\include\SDL_mixer.h(107): warning C4820: 'Mix_Chunk' : '3' bytes padding added after data member 'volume'
+     1>f:\programming\it276\alienrush\src\audio.h(16): warning C4255: 'Init_Audio' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\audio.h(17): warning C4255: 'InitSoundList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\audio.h(18): warning C4255: 'ClearSoundList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(55): warning C4820: 'ENTITY_T' : '2' bytes padding added after data member 'ThinkRate'
+     1>f:\programming\it276\alienrush\src\entity.h(57): warning C4820: 'ENTITY_T' : '2' bytes padding added after data member 'UpdateRate'
+     1>f:\programming\it276\alienrush\src\entity.h(117): warning C4255: 'InitEntityList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(118): warning C4255: 'ClearEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(121): warning C4255: 'NewEntity' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(126): warning C4255: 'DrawEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(127): warning C4255: 'UpdateEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(128): warning C4255: 'ThinkEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(131): warning C4255: 'DrawBBoxEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(163): warning C4255: 'ClearRegionMask' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(168): warning C4255: 'DrawBuckets' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\weapons.h(31): warning C4255: 'PrecacheWeaponSounds' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\enemy.h(23): warning C4255: 'LoadMonsterList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\player.h(59): warning C4255: 'LoadHUD' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\player.h(61): warning C4255: 'DefaultConfig' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\player.h(62): warning C4255: 'LoadKeyConfig' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\player.h(63): warning C4255: 'SaveKeyConfig' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\player.h(66): warning C4255: 'LoadPlayerScreen' : no function prototype given: converting '()' to '(void)'
+     1>..\..\src\enemy.c(30): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\enemy.c(50): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\enemy.c(51): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\enemy.c(143): warning C4305: 'function' : truncation from 'double' to 'float'
+     1>..\..\src\enemy.c(151): warning C4305: 'function' : truncation from 'double' to 'float'
+     1>..\..\src\enemy.c(157): warning C4305: 'function' : truncation from 'double' to 'float'
+     1>..\..\src\enemy.c(221): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\enemy.c(241): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\enemy.c(242): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\enemy.c(274): warning C4305: 'function' : truncation from 'double' to 'float'
+     1>..\..\src\enemy.c(282): warning C4305: 'function' : truncation from 'double' to 'float'
+     1>..\..\src\enemy.c(288): warning C4305: 'function' : truncation from 'double' to 'float'
+         projectiles.c
+     1>f:\programming\libs\include\SDL_keyboard.h(61): warning C4820: 'SDL_keysym' : '3' bytes padding added after data member 'scancode'
+     1>f:\programming\libs\include\SDL_keyboard.h(64): warning C4820: 'SDL_keysym' : '2' bytes padding added after data member 'unicode'
+     1>f:\programming\libs\include\SDL_video.h(82): warning C4820: 'SDL_PixelFormat' : '2' bytes padding added after data member 'Ashift'
+     1>f:\programming\libs\include\SDL_video.h(91): warning C4820: 'SDL_PixelFormat' : '3' bytes padding added after data member 'alpha'
+     1>f:\programming\libs\include\SDL_video.h(101): warning C4820: 'SDL_Surface' : '2' bytes padding added after data member 'pitch'
+     1>f:\programming\libs\include\SDL_events.h(130): warning C4820: 'SDL_KeyboardEvent' : '1' bytes padding added after data member 'state'
+     1>f:\programming\libs\include\SDL_events.h(138): warning C4820: 'SDL_MouseMotionEvent' : '1' bytes padding added after data member 'state'
+     1>f:\programming\libs\include\SDL_events.h(157): warning C4820: 'SDL_JoyAxisEvent' : '1' bytes padding added after data member 'axis'
+     1>f:\programming\libs\include\SDL_events.h(165): warning C4820: 'SDL_JoyBallEvent' : '1' bytes padding added after data member 'ball'
+     1>f:\programming\libs\include\SDL_events.h(196): warning C4820: 'SDL_ResizeEvent' : '3' bytes padding added after data member 'type'
+     1>f:\programming\libs\include\SDL_events.h(213): warning C4820: 'SDL_UserEvent' : '3' bytes padding added after data member 'type'
+     1>f:\programming\libs\include\SDL_events.h(223): warning C4820: 'SDL_SysWMEvent' : '3' bytes padding added after data member 'type'
+     1>f:\programming\it276\alienrush\src\graphics.h(37): warning C4255: 'ResetBuffer' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(38): warning C4255: 'NextFrame' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(42): warning C4255: 'LoadFonts' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(46): warning C4255: 'DrawMessages' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\graphics.h(47): warning C4255: 'InitMessages' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\sprite.h(25): warning C4255: 'InitSpriteList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\sprite.h(34): warning C4255: 'CloseSprites' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\particle.h(28): warning C4255: 'ResetAllParticles' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\particle.h(29): warning C4255: 'SpawnParticle' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\particle.h(30): warning C4255: 'DrawAllParticles' : no function prototype given: converting '()' to '(void)'
+     1>F:\Programming\libs\include\SDL_mixer.h(107): warning C4820: 'Mix_Chunk' : '3' bytes padding added after data member 'volume'
+     1>f:\programming\it276\alienrush\src\audio.h(16): warning C4255: 'Init_Audio' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\audio.h(17): warning C4255: 'InitSoundList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\audio.h(18): warning C4255: 'ClearSoundList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(55): warning C4820: 'ENTITY_T' : '2' bytes padding added after data member 'ThinkRate'
+     1>f:\programming\it276\alienrush\src\entity.h(57): warning C4820: 'ENTITY_T' : '2' bytes padding added after data member 'UpdateRate'
+     1>f:\programming\it276\alienrush\src\entity.h(117): warning C4255: 'InitEntityList' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(118): warning C4255: 'ClearEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(121): warning C4255: 'NewEntity' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(126): warning C4255: 'DrawEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(127): warning C4255: 'UpdateEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(128): warning C4255: 'ThinkEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(131): warning C4255: 'DrawBBoxEntities' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(163): warning C4255: 'ClearRegionMask' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\entity.h(168): warning C4255: 'DrawBuckets' : no function prototype given: converting '()' to '(void)'
+     1>f:\programming\it276\alienrush\src\projectiles.h(6): warning C4255: 'PrecacheProjSounds' : no function prototype given: converting '()' to '(void)'
+     1>..\..\src\projectiles.c(32): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(33): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(40): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(41): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(48): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(60): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\projectiles.c(68): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(69): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(55): warning C4100: 'damage' : unreferenced formal parameter
+     1>..\..\src\projectiles.c(90): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\projectiles.c(95): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(124): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(124): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(124): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(124): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(126): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(132): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\projectiles.c(140): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(140): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(140): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(140): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(142): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(143): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(171): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\projectiles.c(180): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(210): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(210): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(210): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(210): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(212): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(219): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\projectiles.c(227): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(228): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(228): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(228): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(228): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(230): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(231): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(509): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\projectiles.c(517): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(528): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(552): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\projectiles.c(602): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\projectiles.c(610): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(653): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\src\projectiles.c(659): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\src\projectiles.c(705): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(706): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(713): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\projectiles.c(721): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(722): warning C4244: 'function' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\src\projectiles.c(762): warning C4255: 'PrecacheProjSounds' : no function prototype given: converting '()' to '(void)'
+     1>..\..\src\projectiles.c(787): warning C4244: '=' : conversion from 'int' to 'Sint16', possible loss of data
+     1>..\..\src\projectiles.c(788): warning C4244: '=' : conversion from 'int' to 'Sint16', possible loss of data
+     1>..\..\src\projectiles.c(816): warning C4305: 'return' : truncation from 'double' to 'float'
+     1>..\..\src\projectiles.c(818): warning C4305: 'return' : truncation from 'double' to 'float'
+     1>..\..\src\projectiles.c(820): warning C4305: 'return' : truncation from 'double' to 'float'
+     1>..\..\src\projectiles.c(822): warning C4305: 'return' : truncation from 'double' to 'float'
+     1>..\..\src\projectiles.c(824): warning C4305: 'return' : truncation from 'double' to 'float'
+     1>..\..\src\projectiles.c(826): warning C4305: 'return' : truncation from 'double' to 'float'
+     1>..\..\src\projectiles.c(830): warning C4305: 'return' : truncation from 'double' to 'float'
        Link:
-         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\AlienRush.exe" /INCREMENTAL:NO /NOLOGO SDL.lib SDLmain.lib sdl_image.lib sdl_mixer.lib sdl_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\AlienRush.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Programming\IT276\AlienRush\AlienRush.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\AlienRush.lib" /MACHINE:X86 Release\audio.obj
+         Release\enemy.obj
+         Release\entity.obj
+         Release\font.obj
+         Release\game.obj
+         Release\graphics.obj
+         Release\menu.obj
+         Release\particle.obj
+         Release\player.obj
+         Release\projectiles.obj
+         Release\space.obj
+         Release\spawn.obj
+         Release\sprite.obj
+         Release\weapons.obj
+         Release\window.obj
+         Generating code
+     1>f:\programming\it276\alienrush\src\entity.c(252): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\entity.c(253): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\entity.c(1511): warning C4701: potentially uninitialized local variable 'i' used
+     1>f:\programming\it276\alienrush\src\window.c(487): warning C4715: 'GetString' : not all control paths return a value
+     1>f:\programming\it276\alienrush\src\window.c(402): warning C4715: 'GetNumber' : not all control paths return a value
+     1>f:\programming\it276\alienrush\src\player.c(473): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(475): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(479): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(482): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(485): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(488): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(491): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(494): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(497): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(500): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\player.c(503): warning C4702: unreachable code
+     1>f:\programming\it276\alienrush\src\game.c(156): warning C4702: unreachable code
+         Finished generating code
          AlienRush.vcxproj -> F:\Programming\IT276\AlienRush\AlienRush\AlienRush\..\..\AlienRush.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\AlienRush.exe;#1" /manifest Release\AlienRush.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Release\AlienRush.unsuccessfulbuild".
          Touching "Release\AlienRush.lastbuildstate".
@@ -15,4 +215,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:00.58

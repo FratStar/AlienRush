@@ -149,12 +149,12 @@ void PlayerThink(Entity *self)
 			{
 				self->v.y=-30;
 				self->jump=0;
-				t = self->accel * 3/*1.41*/;
+				t = self->accel * 2/*1.41*/;
 				self->v.x -= t;
 			}
 			if(self->jump==0)
 			{
-				self->s.y -=4;
+				self->s.y -=3;
 			}
 
 			if(self->frame < 15 || self->frame >= 19)
@@ -169,12 +169,12 @@ void PlayerThink(Entity *self)
 			if(self->jump==1){
 				self->v.y=-30;
 				self->jump=0;
-				t = self->accel * 3;
+				t = self->accel * 2;
 				self->v.x+=t;
 			}
 			if(self->jump==0)
 			{
-				self->s.y-=4;
+				self->s.y-=3;
 			}
 			if(self->frame < 10 || self->frame >= 14)
 				self->frame = 10;

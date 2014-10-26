@@ -1,2 +1,0 @@
-F:/Programming/IT276/AlienRush/AlienRush/CMakeFiles/ALL_BUILD.dir
-F:/Programming/IT276/AlienRush/AlienRush/CMakeFiles/ZERO_CHECK.dir

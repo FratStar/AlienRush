@@ -98,8 +98,8 @@ Entity *SpawnRocket(Entity *owner,int sx,int sy,float angle,float speed,float ac
 	/* newent->legstate = -1;*/    /*needed if we don't have separate legs*/
 	newent->Unit_Type = UType;
 	newent->lifespan = 60;
-	newent->origin.x = 8;
-	newent->origin.y = 8;  
+	newent->origin.x = 12;
+	newent->origin.y = 20;  
 	Get16Face(newent);
 	newent->frame = newent->face;
 	if(newent->frame < 0)newent->face = 8;
@@ -184,8 +184,8 @@ Entity *SpawnMissile(Entity *owner,int sx,int sy,float angle,float speed,float a
 	/*  newent->legstate = -1;    /*needed if we don't have separate legs*/
 	newent->Unit_Type = UType;
 	newent->lifespan = 60;
-	newent->origin.x = 8;
-	newent->origin.y = 8;  
+	newent->origin.x = 14;
+	newent->origin.y = 16;  
 	Get16Face(newent);
 	newent->frame = newent->face;
 	if(newent->frame < 0)newent->face = 8;
@@ -402,8 +402,8 @@ Entity *SpawnBullet(Entity *owner,int sx,int sy,float angle,float speed,int dama
 	{
 	case B_Tiny:
 		newent->sprite = LoadSwappedSprite("images/weaponsprites/shotgun.png",5,5);
-		newent->origin.x = 48;
-		newent->origin.y = 20;
+		newent->origin.x = 50;
+		newent->origin.y = 30;
 		newent->Boundingbox.x = 1;
 		newent->Boundingbox.y = 1;
 		newent->Boundingbox.w = 3;
@@ -412,8 +412,8 @@ Entity *SpawnBullet(Entity *owner,int sx,int sy,float angle,float speed,int dama
 		break;
 	case B_Small:
 		newent->sprite = LoadSwappedSprite("images/smallbullet.png",8,8);
-		newent->origin.x = 48;
-		newent->origin.y = 20;
+		newent->origin.x = 50;
+		newent->origin.y = 30;
 		newent->Boundingbox.x = 1;
 		newent->Boundingbox.y = 1;
 		newent->Boundingbox.w = 6;
@@ -422,8 +422,8 @@ Entity *SpawnBullet(Entity *owner,int sx,int sy,float angle,float speed,int dama
 		break;
 	case B_Medium:
 		newent->sprite = LoadSwappedSprite("images/bullet.png",12,12);
-		newent->origin.x = 48;
-		newent->origin.y = 20;
+		newent->origin.x = 50;
+		newent->origin.y = 30;
 		newent->Boundingbox.x = 2;
 		newent->Boundingbox.y = 2;
 		newent->Boundingbox.w = 8;
@@ -433,8 +433,8 @@ Entity *SpawnBullet(Entity *owner,int sx,int sy,float angle,float speed,int dama
 	case B_Large:
 		newent->maxtraillen = 4;
 		newent->sprite = LoadSwappedSprite("images/weaponsprites/Machinegunbulletmedium.png",16,16);
-		newent->origin.x = 48;
-		newent->origin.y = 20;
+		newent->origin.x = 50;
+		newent->origin.y = 30;
 		newent->Boundingbox.x = 3;
 		newent->Boundingbox.y = 3;
 		newent->Boundingbox.w = 10;
@@ -523,8 +523,7 @@ void UpdateBullet(Entity *self)
 	
 		if(self->owner!=ThePlayer)
 		{
-		target = ThePlayer;
-				if(CollisionDetect(self, target) == 1)
+				if(CollisionDetect(self, ThePlayer) == 1)
 				{
 					DamageTarget(self->owner,self,target,self->damage,self->dtype,self->kick,self->v.x,self->v.y);
 					FreeEntity(self);
@@ -553,7 +552,7 @@ Entity *SpawnLaser(Entity *owner,int sx,int sy,float angle,float speed,int damag
 	strcpy(newent->EntName,"Laser\0");
 	newent->sound[SF_ALERT] = LoadSound("sounds/bluehit.wav",SDL_MIX_MAXVOLUME>>3);
 	newent->origin.x = 2;
-	newent->origin.y = 41;
+	newent->origin.y = 25;
 	newent->owner = owner;
 	newent->frame = 0;
 	newent->gravityent = gravity;

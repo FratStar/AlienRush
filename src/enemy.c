@@ -6,6 +6,7 @@
 #include "player.h"
 
 extern Entity *ThePlayer;
+extern Weapon WeaponList[];
 
 
 void UpdateFlyer(Entity *self);
@@ -48,7 +49,7 @@ void SpawnenemyM(Entity *owner,int x,int y,int weapon,int affiliation)
   newent->takedamage = 1;
   newent->s.x = x;
   newent->s.y = y;
-  newent->currentweapon = 6;
+  newent->currentweapon = weapon;
   newent->origin.x = 26;
   newent->origin.y = 16;
   newent->v.x = 0;
@@ -239,7 +240,7 @@ void SpawnFlyer(Entity *owner,int x,int y,int weapon,int affiliation)
   newent->takedamage = 1;
   newent->s.x = x;
   newent->s.y = y;
-  newent->currentweapon = 5;
+  newent->currentweapon = weapon;
   newent->origin.x = 26;
   newent->origin.y = 16;
   newent->v.x = 0;
